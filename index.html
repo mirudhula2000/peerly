@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#18264a" />
+  <title>PEERLY — By Students. For Students.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="Peerly home"><span class="brand-mark">p</span><span>peerly<span class="brand-dot">.</span></span></a>
+      <div class="workspace-label">YOUR SPACE</div>
+      <nav class="main-nav" id="main-nav">
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span>Home</button>
+        <button class="nav-item" data-view="discover"><span class="nav-icon">⌕</span>Discover<span class="nav-count">12</span></button>
+        <button class="nav-item" data-view="calendar"><span class="nav-icon">▦</span>My calendar</button>
+        <button class="nav-item" data-view="portfolio"><span class="nav-icon">▧</span>My portfolio</button>
+        <button class="nav-item" data-view="videos"><span class="nav-icon">▷</span>Video library</button>
+        <button class="nav-item" data-view="support"><span class="nav-icon">♡</span>Peer support</button>
+      </nav>
+      <div class="workspace-label second-label">YOUR ACCOUNT</div>
+      <nav class="main-nav">
+        <button class="nav-item" data-view="points"><span class="nav-icon">✳</span>Peer Points</button>
+        <button class="nav-item" data-view="plans"><span class="nav-icon">✦</span>Plans & membership</button>
+        <button class="nav-item" data-view="notifications"><span class="nav-icon">♧</span>Notifications<span class="nav-count alert" id="notification-count">3</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✳</span><strong>A little help goes a long way.</strong><p>Share what you know and earn Peer Points.</p><button data-view="teach">Start teaching <span>↗</span></button></div>
+        <button class="profile-switch" id="profile-switch"><span class="avatar avatar-small avatar-lav">AS</span><span class="profile-name"><b id="user-name">Aarav Sharma</b><small id="user-role">Learner · Grade 10</small></span><span class="switch-chevron">⌄</span></button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open menu">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><span class="crumb-slash">/</span><strong id="breadcrumb-current">Home</strong></div>
+        <div class="topbar-actions">
+          <span class="demo-badge"><i></i> DEMO MODE</span>
+          <button class="icon-button" data-view="notifications" aria-label="Notifications">♧<span class="notification-dot"></span></button>
+          <button class="help-button" id="help-button">? <span>Help</span></button>
+        </div>
+      </header>
+      <div class="content" id="content"></div>
+      <footer class="footer"><span>© 2026 PEERLY</span><span>By Students. For Students.</span><button data-view="safety">Safety & privacy</button><span class="footer-demo">Demo experience · No real payments or messages</span></footer>
+    </main>
+  </div>
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal" id="modal" role="dialog" aria-modal="true"></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
